@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <title>منبر البوستات</title>
+</head>
+
+<body>
+    <!-- navbar -->
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-house"></i></span>
+          <span class="title">Home</span>
+        </a>
+      </li>
+      <!-- <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="icon">Home</span>
+                </a>
+            </li> -->
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-user"></i></span>
+          <span class="title">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-message"></i></span>
+          <span class="title">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+          <span class="title">Help</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-gear"></i></span>
+          <span class="title">Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <span class="title">Password</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+          <span class="title">SignOut</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="toggle" onclick="toggleMenu()"></div>
+  <script type="text/javascript">
+    function toggleMenu() {
+      let navigation = document.querySelector('.navigation');
+      let toggle = document.querySelector('.toggle');
+      navigation.classList.toggle('active');
+      toggle.classList.toggle('active');
+    }
+
+  </script>
+  <!-- article -->
+  <div id="message"> 
+    "شاركنا أفكارك وتجاربك ودعنا نبني مجتمعًا يتعلم وينمو معًا"
+  </div>
+  
+    <div class="container">
+    <div class="btn"><a href="">سجل الان</a></div>
+    <div class="btn"><a href="">المنشورات السابقه</a></div>
+    <div class="btn"><a href=""> منشورات عشوائيه</a></div>
+    <div class="btn"><a href="">انشر الان</a></div>
+    </div>
+   
+    <!-- connect -->
+    <ul class="connect">
+        <li class="lis">
+          <a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-apple"></i></a></li>
+           
+        </li>
+      </ul>
+</body>
+
+</html>
